@@ -1,29 +1,124 @@
 # Site settings
-title: tld's blog
+title: Tang Blog
+SEOTitle: 小唐的博客 | Tang Blog
+header-img: img/home-bg-o.jpg
 email: tld@betahouse.us
-description: Action speak louder than words!
-baseurl: "/zetsu"
-url: "http://tangliangdong.github.io"
+description: "Want to do something"
+keyword: "唐良栋"
+url: "http://tangliangdong.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-author:
-  name     : 'tangliangdong'
-  email    : tld@betahouse.us
-  url      : http://www.tangliangdong.com
-  facebook : http://www.facebook.com/home.php?ref=wizard
-  twitter  : https://twitter.com/
 
-github: https://github.com/tangliangdong
-disqus_shortname: "fernandomoreira"
-google_analytics: UA-52446115-1
 
-paginate: 2
-comments: true
-paginate_path: "/page/:num"
+# SNS settings
+RSS: false
+# weibo_username:     tldpro
+# zhihu_username:     唐良栋
+github_username:    tangliangdong
+twitter_username:   xiaotangld
+facebook_username:  Tang Liangdong
+email_username:  tld@betahouse.us
+# linkedin_username:  firstname-lastname-idxxxx
 
-sass:
-  style: :compressed
-  sass_dir: _sass
+
 
 # Build settings
-markdown  : kramdown
-permalink : /:title/
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: xiaotang
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: tangliangdong.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Someone do everything"
+sidebar-avatar: /img/tld_index.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "承宇小窝",
+        href: "http://wangxinze.com"
+    },{
+        title: "烟树",
+        href: "http://huangbingbing.com"
+    },{
+        title: "皮蛋周",
+        href: "http://zhouyutao.com"
+    }
+    # ,{
+    #     title: "前端外刊评论",
+    #     href: "http://qianduan.guru/"
+    # },{
+    #     title: "天镶的博客",
+    #     href: "http://lingyu.wang/"
+    # },{
+    #     title: "Luke 的自留地",
+    #     href: "http://hmqk1995.github.io"
+    # },{
+    #     title: "Ebn's Blog",
+    #     href: "http://ebnbin.com/"
+    # },{
+    #     title: "SmdCn's Blog",
+    #     href: "http://blog.smdcn.net"
+    # },{
+    #     title: "解旻的博客",
+    #     href: "http://xieminis.me/"
+    # },{
+    #     title: "DHong Say",
+    #     href: "http://dhong.co"
+    # },{
+    #     title: "尹峰以为",
+    #     href: "http://ingf.github.io/"
+    # },{
+    #     title: "前端神盾局",
+    #     href: "http://wepiaofei.github.io/blog/"
+    # }
+]
