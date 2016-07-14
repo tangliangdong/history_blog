@@ -1,0 +1,29 @@
+# Site settings
+title: tld's blog
+email: tld@betahouse.us
+description: Action speak louder than words!
+baseurl: "/zetsu"
+url: "http://tangliangdong.github.io"
+
+author:
+  name     : 'tangliangdong'
+  email    : tld@betahouse.us
+  url      : http://www.tangliangdong.com
+  facebook : http://www.facebook.com/home.php?ref=wizard
+  twitter  : https://twitter.com/
+
+github: https://github.com/tangliangdong
+disqus_shortname: "fernandomoreira"
+google_analytics: UA-52446115-1
+
+paginate: 2
+comments: true
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
