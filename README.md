@@ -1,6 +1,7 @@
-#Hux Blog
+#Tang Blog 
+## theme by Hux
 
-###[View Live Hux Blog &rarr;](http://huxpro.github.io)
+###[View Live Hux Blog &rarr;](http://tangliangdong.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
