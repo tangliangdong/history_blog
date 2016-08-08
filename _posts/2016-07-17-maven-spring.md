@@ -8,6 +8,7 @@ catalog:    true
 tags:
     - maven
     - spring
+    - 配置
 ---
 
 # maven 本地环境配置和spring配置
