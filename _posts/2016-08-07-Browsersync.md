@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      "配置Browsersync"
+subtitle:   "多浏览器多终端同时进行调试的工具"
 date:       2016-08-7 22:00:00
 author:     "Tang"
 header-img: "img/browsersync.png"
@@ -8,6 +9,7 @@ catalog:    true
 tags:
     - browsersync
     - 配置
+    - npm
 ---
 
 # Browsersync 简单配置
