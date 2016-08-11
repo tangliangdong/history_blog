@@ -2,7 +2,7 @@
 layout:     post
 title:      "配置http-server"
 subtitle:   "基于nodejs的轻量级服务器"
-date:       2016-08-08 13:00:00
+date:       2016-08-09 13:00:00
 author:     "Tang"
 header-img: "img/http-server.jpg"
 catalog:    true

@@ -2,7 +2,7 @@
 layout:     post
 title:      "配置gulp"
 subtitle:   "基于流的自动化构建工具"
-date:       2016-08-08 20:00:00
+date:       2016-08-09 20:00:00
 author:     "Tang"
 header-img: "img/gulp.jpg"
 catalog:    true
