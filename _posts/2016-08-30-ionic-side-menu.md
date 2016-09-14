@@ -1,13 +1,13 @@
 ---
 layout:     post
 title:      "ionic side menu"
-subtitle:   "ionic beta@37 侧滑导航制作"
+subtitle:   "ionic2 beta@37 侧滑导航制作"
 date:       2016-08-30 11:00:00
 author:     "Tang"
 header-img: "img/ionicsidemenu.jpg"
 catalog:    true
 tags:
-    - ionic 
+    - ionic2
     - side menu
 ---
 
