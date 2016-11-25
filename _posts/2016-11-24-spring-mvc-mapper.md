@@ -10,7 +10,9 @@ tags:
     - 经验
 ---
 
-### spring页面超链接跳转
+### spring映射
+
+#### 简单的页面跳转
 
 ```html
 <a href="blog">blogs页面</a>
@@ -50,7 +52,7 @@ public class BlogController {
 - `InternalResourceView`会把`Controller`处理器方法返回的模型属性都存放到对应的request属性中
 - `InternalResourceViewResolver`会给它加上定义好的前缀和后缀，组成`/WEB-INF/views/xxx.jsp`的形式。如之前的例子，则是显示`/WEB-INF/views/blog/blogs.jsp`。
 
-### 重定向`redirect`
+#### 重定向`redirect`
 
 > redirect 可以重定向到某个controller映射。
 
@@ -72,7 +74,7 @@ public ModelAndView deleteBlog(@PathVariable int id){
 }
 ```
 
-因为我们需要返回原来的页面，但是需要重新获取、显示数据，我们就不能只是简单的显示这个视图，而是要调用映射到这个页面的方法，也就是如下的方法。
+因为我们需要返回到原来的页面，但是需要重新获取、显示数据，我们就不能只是简单的通过`mav.setViewName("blog/blogs")`显示这个视图，而是要调用映射到这个页面的方法，在通过这个方法获取数据，再显示到`blogs.jsp`页面上，也就是如下的方法。
 
 ```java
 @Controller
@@ -90,7 +92,7 @@ public class BlogController {
 }
 ```
 
-现在页面的URL是`http://localhost:8080/myspring/blog`，如果不使用`redirect`(即`mav.setViewName("blog")`)，点击超链接，则URL变成`http://localhost:8080/myspring/blog/delete/36`,会显示没有映射的警告且不会有页面显示。
+现在页面的URL是`http://localhost:8080/myspring/blog`，如果不使用`redirect` (即`mav.setViewName("blog/blogs")`) ，点击超链接，则URL变成`http://localhost:8080/myspring/blog/delete/36`,会显示没有映射的警告且不会有页面显示。
 
 
 
