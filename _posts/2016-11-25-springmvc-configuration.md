@@ -90,7 +90,8 @@ tags:
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
-    
+
+    <!-- 在spring中加入数据映射器接口 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="edu.hziee.mappers"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
