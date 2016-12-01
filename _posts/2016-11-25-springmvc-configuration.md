@@ -74,6 +74,8 @@ tags:
     
     <!-- 注解驱动 -->
     <mvc:annotation-driven />
+    <!-- 第三方的库，如bootstrap -->
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
     
     <!-- 在指定包下 扫描组件bean -->
     <context:component-scan base-package="edu.hziee.controllers" />
