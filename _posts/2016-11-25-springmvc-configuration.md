@@ -37,6 +37,24 @@ tags:
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
 
+  <!-- 配置spring的字符集过滤，解决中文插入数据库的乱码问题 -->
+  <filter>  
+      <filter-name>characterEncodingFilter</filter-name>  
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>  
+      <init-param>  
+          <param-name>encoding</param-name>  
+          <param-value>UTF-8</param-value>  
+      </init-param>  
+      <init-param>  
+          <param-name>forceEncoding</param-name>  
+          <param-value>true</param-value>  
+      </init-param>  
+  </filter>
+  <filter-mapping>  
+      <filter-name>characterEncodingFilter</filter-name>  
+      <url-pattern>/*</url-pattern>  
+  </filter-mapping>
+
   <!-- 配置spring的前端控制器 -->
   <!-- spring默认配置文件是/WEB-INF/[servlet名字]-servlet.xml -->
   <servlet>
