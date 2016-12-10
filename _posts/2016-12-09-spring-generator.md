@@ -53,6 +53,12 @@ tags:
 </generatorConfiguration>
 ```
 
+### 执行generatorConfig.xml
+
+直接在generatorConfig.xml上右键，如图所示的选项，点击运行，即可自动生成映射。
+
+![img](../../../../img/mybatis-generator/generator3.jpg)
+
 
 
 
