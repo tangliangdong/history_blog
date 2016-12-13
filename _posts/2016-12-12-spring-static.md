@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Spring获取静态文件"
+title:      "Spring获取静态资源"
 subtitle:   ".css,.js,.jpg,.png"
 date:       2016-12-12 16:00:00
 author:     "Tang"
@@ -90,6 +90,8 @@ String basePath = request.getScheme()+"://"+
 <link rel="stylesheet" type="text/css" 
     href="<c:url value='/resources/bootstrap/css/bootstrap.css'/>">
 ```
+
+`value`属性最前面必须是`/`。
 
 显示的地址是带项目名的地址。`href="/ActivityDemo/resources/bootstrap/css/bootstrap.css"`
 
