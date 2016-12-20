@@ -8,7 +8,7 @@ header-img: "img/jquery-ajax.jpg"
 catalog:    true
 tags:
     - spring
-    - JQuery
+    - jQuery
     - ajax
 ---
 
