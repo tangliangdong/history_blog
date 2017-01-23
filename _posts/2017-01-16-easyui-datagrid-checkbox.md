@@ -2,7 +2,7 @@
 layout:     post
 title:      "easyui datagrid复选框选择记录"
 subtitle:   "ionic"
-date:       2016-09-16 22:00:00
+date:       2017-01-16 22:00:00
 author:     "Tang"
 header-img: "img/easyui-datagrid-checkbox.jpg"
 catalog:    true
