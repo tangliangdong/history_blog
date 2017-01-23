@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "easyui datagrid复选框选择记录"
-subtitle:   "ionic"
 date:       2017-01-16 22:00:00
 author:     "Tang"
 header-img: "img/easyui-datagrid-checkbox.jpg"
@@ -91,13 +90,13 @@ tags:
     onSelect: function (rowIndex, rowData) {
         if (!IsCheckFlag) {
             IsCheckFlag = true;
-            $(".jq-datagrid").datagrid("unselectRow", rowIndex);
+            $('.jq-datagrid').datagrid('unselectRow', rowIndex);
         }
     },                    
     onUnselect: function (rowIndex, rowData) {
         if (!IsCheckFlag) {
             IsCheckFlag = true;
-            $(".jq-datagrid").datagrid("selectRow", rowIndex);
+            $('.jq-datagrid').datagrid('selectRow', rowIndex);
         }
     }
     
