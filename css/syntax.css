@@ -12,7 +12,55 @@
 .highlight pre code {
   white-space: pre;       // forces <code> to respect <pre> formatting
 }
+.table>thead>tr>th{
+    font-weight: bold; /*加粗*/
+    text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+    white-space: nowrap; /*表头内容强制在一行显示*/
+    border-bottom: 3px solid #ddd !important;
+    border-right: 1px solid #eee;
+    padding: 8px;
+    line-height: 2;
+}
+.table{
+  font-size: 14px;
+}
 
+.table>thead>tr>td,
+.table>thead>tr>th{
+  border-bottom: 3px solid #ddd;
+  border-right: 1px solid #eee;
+  padding: 8px;
+  line-height: 2;
+}
+.table tr {
+    white-space: normal;
+}
+.table>tbody>tr>td{
+  word-wrap: break-word;
+}
+.table tbody tr:nth-child(2n) {
+    background: #f9f9f9;
+}
+.table>tbody>tr:hover {
+    background-color: #f5f5f5;
+}
+.table{
+    table-layout:fixed;
+}
+.post-container p>a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #777;
+    border-bottom: 1px solid #777;
+}
+.post-container p>a:hover {
+    color: #111;
+    border-bottom: 1px solid #111;
+}
+.site-heading>h1,
+h2{
+    font-family: Georgia,华文行楷,-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
 
 /*
  * GitHub style for Pygments syntax highlighter, for use with Jekyll
