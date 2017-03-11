@@ -89,9 +89,12 @@ String basePath = request.getScheme()+"://"+
 
 <link rel="stylesheet" type="text/css" 
     href="<c:url value='/resources/bootstrap/css/bootstrap.css'/>">
+<script type="text/javascript" src="<c:url value='/resources/js/jquery-2.2.4.min.js'/>"></script>
 ```
 
 `value`属性最前面必须是`/`。
+
+###### 注意引入 css 文件是`<link>` 的 `href`属性，引入 js 文件是`<script></script>` 的 `src`属性
 
 显示的地址是带项目名的地址。`href="/ActivityDemo/resources/bootstrap/css/bootstrap.css"`
 
