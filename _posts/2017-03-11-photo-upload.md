@@ -18,6 +18,8 @@ tags:
 
 > `org.apache.catalina.connector.RequestFacade cannot be cast to org.springframework.web.multipart.MultipartHttpServletRequest`
 
+`method="post"`上传的文件类型也必须是`post`。
+
 要限制上传的文件类型，可以给`<input type="file">`加上
 - `accept="image/*"`表示允许上传所有的图片类型，
 - `accept="image/gif, image/jpeg,image/png"`表示允许上传的文件仅限于`jpg,gif,png`。
@@ -89,6 +91,28 @@ public String publicActivity(@RequestParam("file_data") MultipartFile filedata,
 MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
 MultipartFile filedata = multipartRequest.getFile("file");
 ```
+
+### `dispatcher-servlet.xml`配置文件
+
+> 配置multipartResolver来解析带enctype="multipart/form-data"属性的表单
+
+** 如果不配置`multipartResolver`，那带属性`enctype="multipart/form-data"`的所有表单数据就都无法获取到数据 *
+
+```xml
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+    <!-- 文件上传头部编码，默认是iso-8859-1，注意defaultEncoding必须和用户的jsp的pageEncoding属性一致，以便能正常读取文件 -->
+    <property name="defaultEncoding" value="utf-8"></property>
+
+    <!-- maxUploadSize 是上传文件的大小，单位为字节 -->
+    <property name="maxUploadSize" value="10485760000"></property>
+
+    <!-- 读取文件到内存中最大的字节数，默认是1024 -->
+    <property name="maxInMemorySize" value="40960"></property>
+</bean>
+```
+
+需要引入`commons-fileupload-1.3.2.jar`
 
 
 
