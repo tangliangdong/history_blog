@@ -16,10 +16,16 @@ tags:
 
 ```java
 
-//获取calendar对象
+// 获取calendar对象
 Calendar cal = Calendar.getInstance();
 
-//用给定的 long 值(时间戳)设置此 Calendar 的当前时间值。
+// 获取现在的时间戳，以毫秒为单位
+// 1490099962065
+// 用这个相比较 new Date() 获取效率高，
+// 因为他也是通过调用 System.currentTimeMillis()来获取时间戳
+System.currentTimeMillis()
+
+// 用给定的 long 值(时间戳)设置此 Calendar 的当前时间值。设置的单位是毫秒
 void setTimeInMillis(long millis)
 
 // 使用给定的 Date 设置此 Calendar 的时间
@@ -36,7 +42,7 @@ cal.add(Calendar.MONTH,3); //日期加3个月
 cal.add(Calendar.DAY_OF_YEAR,10);  //日期加10天
 
 //获得年份、月份、小时
-cal.get(Calendar.Month)  //这样的方法 0表示一月，1表示二月    
+cal.get(Calendar.MONTH)  //这样的方法 0表示一月，1表示二月    
 cal.get(Calendar.DAY_OF_MONTH)  //获得这个月的第几天    
 cal.get(Calendar.DAY_OF_WEEK)  //获得这个星期的第几天    
 cal.get(Calendar.DAY_OF_YEAR)  //获得这个年的第几天    
