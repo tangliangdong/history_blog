@@ -30,16 +30,16 @@ void setTimeInMillis(long millis)
 // 使用给定的 Date 设置此 Calendar 的时间
 void setTime(Date date)
 
-//可以使用下面三个方法把日历定到任何一个时间：
+// 可以使用下面三个方法把日历定到任何一个时间：
 set(int year ,int month,int date)     
 set(int year ,int month,int date,int hour,int minute)     
 set(int year ,int month,int date,int hour,int minute,int second)
 
-//Calendar加减日期
-cal.add(Calendar.YEAR,-1); //日期减1年
-cal.add(Calendar.MONTH,3); //日期加3个月
-cal.add(Calendar.Calendar.WEEK_OF_YEAR,1); //日期加一周
-cal.add(Calendar.DAY_OF_YEAR,10);  //日期加10天
+// Calendar加减日期
+cal.add(Calendar.YEAR,-1); // 日期减1年
+cal.add(Calendar.MONTH,3); // 日期加3个月
+cal.add(Calendar.Calendar.WEEK_OF_YEAR,1); // 日期加一周
+cal.add(Calendar.DAY_OF_YEAR,10);  // 日期加10天
 
 ```
 
@@ -72,13 +72,32 @@ m.add(13,1); // 2000年01月01日 00时00分01秒  field: 13 Calendar.SECOND
 
 根据上面的测试结果，我们可以把常量归类总结下：
 
-* 加减年份： *Calendar.YEAR*; field: 1
-* 加减月份： *Calendar.MONTH*; field: 2
-* 加减周： *Calendar.WEEK_OF_YEAR*、*Calendar.WEEK_OF_MONTH*、***Calendar.DAY_OF_WEEK_IN_MONTH*** field: 3,4,8
-* 加减日： *Calendar.DATE*、*Calendar.DAY_OF_MONTH*、*Calendar.DAY_OF_YEAR*、*Calendar.DAY_OF_WEEK* field: 5,6,7
-* 加减小时： *Calendar.HOUR*、*Calendar.HOUR_OF_DAY* field: 10,11
-* 加减分钟： *Calendar.MINUTE* field: 12
-* 加减秒： *Calendar.SECOND* field: 13
+ - 加减年份：  field: 1
+    - *Calendar.YEAR*;
+
+ - 加减月份：  field: 2
+    - *Calendar.MONTH*;
+
+ - 加减周： field: 3 , 4 , 8
+    - *Calendar.WEEK_OF_YEAR*
+    - *Calendar.WEEK_OF_MONTH*
+    - ***Calendar.DAY_OF_WEEK_IN_MONTH***
+
+ - 加减日： field: 5 , 6 , 7
+    - *Calendar.DATE*
+    - *Calendar.DAY_OF_MONTH*
+    - *Calendar.DAY_OF_YEAR*
+    - *Calendar.DAY_OF_WEEK*
+
+ - 加减小时：  field: 10,11
+    - *Calendar.HOUR*、
+    - *Calendar.HOUR_OF_DAY*
+
+ - 加减分钟：  field: 12
+    - *Calendar.MINUTE*
+
+ - 加减秒：  field: 13
+    - *Calendar.SECOND*
 
 > `Calendar.AM_PM` field: 9; 转换成12小时制
 
@@ -88,14 +107,16 @@ Calendar常量 基本上符合这样的规律：
  - Calendar.DAY...   表示加减 日。
  - Calendar.HOUR...   表示加减小时。
 
- > 除了 `Calendar.DAY_OF_WEEK_IN_MONTH` 这个是表示加减 周。
+ > 除了 `Calendar.DAY_OF_WEEK_IN_MONTH` 这个比较特殊，是表示加减 周。
 
 
-```
+```java
 //获得年份、月份、小时
-cal.get(Calendar.MONTH)  //这样的方法 0表示一月，1表示二月    
-cal.get(Calendar.DAY_OF_MONTH)  //获得这个月的第几天    
-cal.get(Calendar.DAY_OF_WEEK)  //获得这个星期的第几天    
-cal.get(Calendar.DAY_OF_YEAR)  //获得这个年的第几天    
-cal.getTimeMillis()  //获得当前时间的毫秒表示    
+cal.get(Calendar.MONTH)  // 返回的数字：0表示一月，1表示二月    
+cal.get(Calendar.DAY_OF_MONTH)  // 获得这个月的第几天    
+cal.get(Calendar.DAY_OF_WEEK)  // 获得这个星期的第几天    
+cal.get(Calendar.DAY_OF_YEAR)  // 获得这个年的第几天    
+cal.getTimeMillis()  // 获得当前时间的毫秒表示    
 ```
+
+
