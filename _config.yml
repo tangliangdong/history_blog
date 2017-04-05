@@ -65,7 +65,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: a76973d251488473df77d002243aea2f
 # Google Analytics
 ga_track_id: 'GTM-MN5ZPG4'            # Format: UA-xxxxxx-xx
-ga_domain: tangliangdong.me
+ga_domain: zhizhi.tangliangdong.me
 
 
 
