@@ -4,7 +4,7 @@ SEOTitle: 小唐的博客 | Tang Blog
 header-img: img/page1.jpg
 email: tld@betahouse.us
 description: "Want to do something"
-keyword: "唐良栋"
+keyword: "唐良栋,小唐"
 url: "http://tangliangdong.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -26,7 +26,7 @@ twitter_username:   xiaotangld
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 15
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -53,9 +53,9 @@ kramdown:
 # disqus_username: tangliangdong
 
 # Duoshuo settings
- duoshuo_username: xiaotang
+# duoshuo_username: xiaotang
 # Share component is depend on Comment so we can NOT use share only.
- duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
