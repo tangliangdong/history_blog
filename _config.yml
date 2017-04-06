@@ -72,7 +72,7 @@ ga_domain: zhizhi.tangliangdong.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "你的指尖 有改变世界的力量"
-sidebar-avatar: /img/tld_index.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/gogogo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
