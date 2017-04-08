@@ -127,6 +127,20 @@ Calendar常量 基本上符合这样的规律：
 
 > 除了 `Calendar.DAY_OF_WEEK_IN_MONTH` 这个比较特殊，是表示加减 周。
 
+#### 设置某天的起始时间
+
+> 比如你想获得今天的时间段，就需要先获得今天0点的时间和24点的时间
+
+```java
+Calendar cal = Calendar.getInstance();
+cal.setTimeInMillis(System.currentTimeMillis());
+cal.set(Calendar.MILLISECOND,0); // 设置毫秒为0
+cal.set(Calendar.SECOND,0);  // 设置秒为0
+cal.set(Calendar.MINUTE,0); // 设置分钟为0
+cal.set(Calendar.HOUR_OF_DAY,0); // 设置小时为0
+// cal.set(Calendar.HOUR,0); // 设置小时为中午12点
+```
+#### 获取年份、月份、小时
 ```java
 //获得年份、月份、小时
 cal.get(Calendar.MONTH);  // 返回的数字：0表示一月，1表示二月
