@@ -15,22 +15,42 @@ tags:
 
 ## 提高效率的Sublime Text 3插件
 
+> 虽然是收费的，但网上可以找到注册码
+> 如下是网上找来的注册码，打开菜单的 help > Enter License ，复制进去就行了。
+
+```
+—– BEGIN LICENSE —–
+
+Michael Barnes
+Single User License
+EA7E-821385
+8A353C41 872A0D5C DF9B2950 AFF6F667
+C458EA6D 8EA3C286 98D1D650 131A97AB
+AA919AEC EF20E143 B361B1E7 4C8B7F04
+B085E65E 2F5F5360 8489D422 FB8FC1AA
+93F6323C FD7F7544 3F39C318 D95E6480
+FCCC7561 8A4A1741 68FA4223 ADCEDE07
+200C25BE DBBC4855 C4CFB774 C5EC138C
+0FEC1CEF D9DCECEC D3A5DAD1 01316C36
+
+—— END LICENSE ——
+```
+
 ### 先安装Package Control
-点击菜单中的 “View”–“Show Console”（也可通过快捷键 <code>Ctrl + \` </code> 打开，不过可能因与系统其他软件快捷键冲突而打不开）调出 Console。然后把下面的代码粘贴进去后回车即可，需稍微等待一段时间。（以下代码可能会因更新而导致失效，请以官网代码为准。[Package Control][]）
+点击菜单中的 “View”–“Show Console”（也可通过快捷键 <code>Ctrl + \` </code>(ctrl + \`) 打开，不过可能因与系统其他软件快捷键冲突而打不开）调出 Console。然后把下面的代码粘贴进去后回车即可，需稍微等待一段时间。（以下代码可能会因更新而导致失效，请以官网代码为准。[Package Control][]）
 
 `sublime text 3`
 
 <code>
-    import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+    import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 </code>
-    
 
 重启Sublime Text即可。
 
 ***
 
 建议通过 Package Control 安装Sublime插件
-使用 `Ctrl + Shift + P` 调出面板，然后输入 `pci` ，选中“Package Control: Install Package”并回车，然后通过输入插件的名字找到插件并回车安装即可,安装时左下角会显示正在安装的项目。有些插件需要安装[node.js][]，只要下载并将node.js目录配置到环境变量中即可。
+使用 `Ctrl + Shift + P`（shift + command + p） 调出面板，然后输入 `pci` ，选中“Package Control: Install Package”并回车，然后通过输入插件的名字找到插件并回车安装即可,安装时左下角会显示正在安装的项目。有些插件需要安装[node.js][]，只要下载并将node.js目录配置到环境变量中即可。
 
 >#### 插件不要使用太多，可能会出现快捷键冲突导致插件失效的情况，当然你也可以修改默认快捷键。
 
@@ -44,7 +64,7 @@ tags:
 [Emmet语法][]
 
 ### 2. CSScomb
-CssComb是为CSS属性进行排序和格式化插件 
+CssComb是为CSS属性进行排序和格式化插件
 
 使用Package Control安装CssComb插件后，你可能发现它并不能运行
 
@@ -67,7 +87,7 @@ CssComb是为CSS属性进行排序和格式化插件
 
 与CssComb插件一样，该插件也需要系统已安装Node.js环境
 
-使用方法：在输入CSS3属性后（冒号前）按Tab键 
+使用方法：在输入CSS3属性后（冒号前）按Tab键
 
 ![image](../../../../img/sublime-text-3-img/autoprefixer.gif)
 <!-- <img src="https://github.com/tangliangdong/Sublime-Text-3/blob/master/images/autoprefixer.gif" width="300px" alt="">
@@ -124,7 +144,7 @@ Color Highlighter这个插件会检测CSS文件中的颜色码，不论是Hex码
 ### 7. AutoFileName
 
 文件路径自动提示，不过这个精准度的不够高，很多不是文件路径的地方都会提示。
- 
+
 ### 8. JQuery
 
 JQuery代码提示
