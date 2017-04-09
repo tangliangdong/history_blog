@@ -63,6 +63,19 @@ FCCC7561 8A4A1741 68FA4223 ADCEDE07
 
 [Emmet语法][]
 
+我在Mac上安装的emmet插件的时候，有遇到过嵌套表达时 tab键失效的情况，
+
+![image](../../../../img/sublime-text-3-img/emmet1.png)
+
+ - 要先确定你的编译环境是html
+ - 还可能是pyv8的问题，由于Emmet插件需要pyv8插件，你需要戳 👉👉👉[这里](https://github.com/emmetio/pyv8-binaries) 下载zip。然后解压到sublime的在Packages目录下
+
+在页面的最下方👇👇👇 选择你sublime的版本，以及电脑的版本。 
+
+![image](../../../../img/sublime-text-3-img/emmet2.png)
+
+然后重启sublime 就可以了。
+
 ### 2. CSScomb
 CssComb是为CSS属性进行排序和格式化插件
 
@@ -185,3 +198,5 @@ Sublime Text 本对中文支持不太好，如果直接打开 GBK 编码格式�
 [Node.js]:https://nodejs.org/en/
 [Emmet语法]:http://www.ruanyifeng.com/blog/2013/06/emmet_and_haml.html
 [Package Control]:https://packagecontrol.io/installation#st3
+
+
