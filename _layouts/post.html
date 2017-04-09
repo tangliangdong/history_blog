@@ -129,7 +129,7 @@ layout: default
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
-            </div>  
+            </div>
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
@@ -175,7 +175,7 @@ layout: default
                 {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <ul class="list-inline friend-list">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
@@ -197,7 +197,7 @@ var duoshuoQuery = {short_name:"tangliangdong"};
         ds.type = 'text/javascript';ds.async = true;
         ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
+        (document.getElementsByTagName('head')[0]
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
     </script>

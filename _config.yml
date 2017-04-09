@@ -4,7 +4,7 @@ SEOTitle: 小唐的博客 | Tang Blog
 header-img: img/page1.jpg
 email: tld@betahouse.us
 description: "Want to do something"
-keyword: "唐良栋,小唐"
+keyword: "唐良栋,小唐，xiaotang,tangliangdong,betahouse"
 url: "http://tangliangdong.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -85,16 +85,16 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "承宇小窝",
-        href: "http://wangxinze.com"
+        title: "知之",
+        href: "http://zhizhi.betahouse.us"
     },{
-        title: "烟树",
-        href: "http://huangbingbing.com"
+        title: "Clark",
+        href: "http://zhoushidong.cc"
     },{
-        title: "皮蛋周",
-        href: "http://zhouyutao.com"
+        title: "一鸟丹青橘的小站",
+        href: "http://www.yiniaodanqingjv.com/"
     },{
-        title: "平靖",
-        href: "http://www.jing.do"
-    }
+        title: "Coink",
+        href: "http://coink.wang"
+    },
 ]

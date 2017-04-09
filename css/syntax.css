@@ -157,3 +157,7 @@ h2{
 .container li{
     line-height: 1.8em;
 }
+
+.container .friend-list>li{
+  display: block;
+}
