@@ -21,9 +21,11 @@ tags:
 4. 享受git的版本管理功能，不用担心文章遗失。相比较wordpress保存在数据库，数据更不易丢失。
 5. 你只要用自己喜欢的编辑器写文章就可以了，其他事情一概不用操心，都由github处理。
 
+
+
 -------
 
-> 就我个人的使用体验来说。。。。。
+> 相比较wordpress,就我个人的使用体验来说。。。。。
 
 好吧，其实我建好wordpress 就发过两次文章，这两次还是发的相同的一篇，因为服务器被我搞爆炸了，数据库又没备份，然后只能重新开始写。
 
@@ -160,7 +162,19 @@ tags:                                    # 此博客的标签
 ![](../../../../img/8.png)
 ```
 
+#### 上传博客
+
+打开命令行,cd 到博客的根目录，输入：
+
+```
+git push origin master
+```
+
+origin 是你给远程仓库起的名字，master 代表的是远程仓库的一个分支。
+
 ### jekyll博客主题
+
+> 分享一些 我之前搜来的博客主题。
 
 * [掌心](http://www.zhanxin.info/themes.html)
 * [Jekyll主题收藏](http://yongyuan.name/blog/collect-jekyll-theme.html)
