@@ -33,7 +33,7 @@ tags:
 
 导出成功后，把后缀 **.xml** 改成 **.ftl** 这样就成为freemarker的模板了，再用sublime打开，用Indent xml格式化工具将xml格式化下，没有的话通过 **package control插件** 在线搜索下载 **Indent xml插件**。
 
-> 不会装sublime插件的话，可以去看我以前写的一篇博客：[sublime text 3 插件分享](http://localhost:4000/2016/07/11/sublime-text-3/)。
+> 不会装sublime插件的话，可以去看我以前写的一篇博客：[sublime text 3 插件分享](http://zhizhi.tangliangdong.me/2016/07/11/sublime-text-3/)。
 
 然后打开菜单栏里的 **Selection->Format->Indent XML**,如下图
 
@@ -125,7 +125,7 @@ public String getImageStr(String imgFile) {
 #### 把变量引入模板
 
 ```java
-Configuration configuration = new Configuration();
+Configuration configuration = new Configuration(Configuration.VERSION_2_3_23);
 configuration.setDefaultEncoding("utf-8");
 // 设置模板所在的包
 configuration.setClassForTemplateLoading(this.getClass(), "../template");
