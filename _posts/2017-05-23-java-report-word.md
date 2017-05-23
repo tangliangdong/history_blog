@@ -1,13 +1,14 @@
 ---
 layout:     post
-title:      "java通过freemarker导出word"
-subtitle:   "通过freemarker制作word模板.ftl"
+title:      "java通过freemarker导出doc"
+subtitle:   "在word中引入图片"
 date:       2017-5-22 13:00:00
 author:     "Tang"
 header-img: "img/java-report-word.jpg"
 catalog:    true
 tags:
     - word
+    - doc
     - java
     - freemarker
 ---
